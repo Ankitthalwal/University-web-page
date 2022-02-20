@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 110vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://wallpapercave.com/wp/wp2468653.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+ nav img{ 
+    height: 70px;
+    width: 120px;
+    color:black;
+    position: absolute;
+    bottom:630px;
+} 
+.but{
+    flex: 1;
+    text-align: right;
+    position: absolute;
+    left: 1000px;
+    bottom: 650px;
+    
+    
+}
+.but ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 13px;
+    
+
+    
+}
+.but ul li a{
+    text-decoration: none;
+    color: white;
+    
+} 
+.but ul li::after{
+    content: "";
+    width: 0px;
+    height: 2px;              
+    /*   it is used to come line ubder for home ,menu for 0.5 s */
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.but ul li:hover::after{
+       width: 100%;
+
+}
+.textbox{
+    color: white;
+    position: absolute;
+    left: 260px;
+    bottom: 270px;
+    text-align: center;
+}
+.textbox p{
+    color: #fff;
+}
+.textbox h1{
+    font-size: 65px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 8px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 23px;
+    
+}
+/*     This tab when you want to menubar in site of screen in smartphone but not want to in your laptop pc */
+nav .fa{
+    display: none;
+}
+.btn:hover{
+      border: 1px solid #f44336;
+      background: #f44336;
+      transition: 1.3s;
+}
+/*  The below code is for when we see it in phone change his and show menubar skin */
+@media(max-width:700px){
+    text.h1{
+        font-size: 4px;
+    }
+.but ul li{
+    display: block;
+}
+
+
+
+.but{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    /* right: -200px is used to remove meno bar home ,contactetc */
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1sec;
+}
+/*  add close icon for hidden screen  for smartphone*/
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+} 
+/*  add menu links to open menu for smartphone */
+.but ul{
+    padding: 30px;
+}
+
+}
+.course{
+    width: 80%;
+    /*  margin auto to come it in centre */
+    margin: auto;
+    /* text align is also used it for centre but work hard the margin */
+    text-align: center;
+    /* some spaces from top */
+    padding-top: 100px;
+}
+ .course h1{
+    font-size: 30px;
+    /* font weight it less dark the text */
+    font-weight: 600;
+}
+ .course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+/*    course........... */
+.row{
+    margin-top: 5%;
+    /* display:flex is used to take thinks vertically from horizontal */
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    /* flex  basis means it comes in a tree form */
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    /* border box is used to separte it as box */
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align:center ;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        /* flex direction can come it in colunm */
+        flex-direction: column;
+    }
+}
+
+
+
+    /*.........     campus............ */
+.campus{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    margin-right: 800px;
+    margin-top: 100px;
+     
+    width: 30%;
+    height: 250px;
+    
+}
+.layer{
+    float: left;
+width: 340px;
+    margin-top: -300px;
+    margin-left: -10px;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.campus-col1 img{
+    
+    margin: auto;
+    margin-top: -290px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+#india img{
+    margin: auto;
+    margin-left: 800px;
+    margin-top: 55px;
+    
+    width: 30%;
+    height: 250px;
+
+
+}
+#newyork img{
+    height: 250px;
+    width: 320px;
+    display: block;
+    
+    
+}
+.layer1{
+    margin: -300px;
+    position: relative;
+    height: 10px;
+    
+    background: transparent;
+    transition: 0.5s;
+    
+
+}
+
+.layer1{
+
+    width: 30%;
+    background: transparent;
+    margin-left: 370px;
+   
+    height: 300px;
+    border-radius: 10px;
+    
+    
+
+}
+.layer1:hover{
+    background: rgba(226,0,0,0.7);
+    
+}
+   
+
+/*     ..... this down code is aslo for pop effect    */
+.layer1 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    font-size: 26px;
+    left: 30%;
+    
+
+    position: absolute;
+    
+    transform: translateX(-40%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    font-size: 26px;
+    left: 30%;
+    position: absolute;
+    
+    transform: translatey(-40%);
+    
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+/*        ........ By use of this below code when we touch the picture the itss name comes out as pop up */
+.layer:hover h3{
+    bottom: 60%;
+    opacity: 3;
+}
+.layer1:hover h3{
+    bottom : 50%;
+    opacity: 3;
+}
+.clear2:hover h3{
+    bottom:50%;
+    opacity: 3;
+}
+
+.clear2 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    font-size: 26px;
+    left: 30%;
+    position: absolute;
+    transform: translateX(-40%);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+ 
+
+.clear2{
+    float: right;
+    /*  position relative we can fall red color on images when we touch it */
+    position: relative;
+    width: 340px;
+    height: 300px;
+    background: transparent;
+    margin-top: -300px;
+    margin-right: -60px;
+    margin-left: 700px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.clear2:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+
+@media(max-width: 700px){
+    
+}
+.facilities {
+    text-align: center;
+    
+    margin-top: 100px;
+    bottom: 100px;
+    
+
+}
+.para{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* for library  */
+.row1 img{
+
+    margin-right: 900px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    
+}
+.world {
+    margin-right:900px;
+}
+.world1{
+    margin-right: 900px;
+}
+
+/*  for playground */
+    .row2 img{
+      position: absolute;
+      left:1000px;
+      margin-top: -340px;
+      height: 220px;
+      width: 250px;
+      display: block;
+      border-radius: 10px;
+    }
+    .largest{
+        margin-top: -86px;
+        position: absolute;
+        left: 1050px;
+
+        
+    }
+    .largest1{
+        margin-top: -50px;
+        position: absolute;
+        left:1000px;
+    }
+.row3 img{
+    margin-top: -320px;
+    
+    position: absolute;
+    left: 500px;
+    height: 200px;
+    border-radius: 10px;
+}
+.tasty{
+    margin-top: -85px;
+    position: absolute;
+    left:550px;
+    
+}
+/* if your material is not move the used first position absolut> then left then> margin */
+.tasty1{
+    margin-top: -50px;
+    position: absolute;
+    left:500px ;
+}
+
+
+/*  ..............what Our Students says...... */
+.student{
+    text-align: center;
+    height: px;
+    margin-top: 100px;
+}
+
+/*  if you want to gap between first and second page use class of para  */
+.student1{
+    
+    text-align: center;
+    height: 100px;
+}
+.user2{
+    flex-basis:50% ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding :25px;
+    background-color: #fff3f3;
+    display: flex;
+    /*   display flex  means it come in goood way and line by line */
+    height: 40px;
+    width: 40%;
+    border-radius: ;
+}
+.user1 {
+    margin-top: 10px;
+    position: absolute;
+    
+    margin-left: 690px;
+    
+    
+}
+.simran{
+    font-size: 12px;
+    
+}
+.ankit{
+    font-size: 12px;
+}
+    
+}
+.user2{
+    position: absolute;
+    margin-left: 10px;
+    
+}
+.user1{
+    flex-basis:50% ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding :25px;
+    background-color: #fff3f3;
+    display: flex;
+    /*   display flex  means it come in goood way and line by line */
+    height: 40px;
+    width: 40%;
+    border-radius: ;
+
+}
+.user1 img{
+    border-radius: 30px;
+}
+.user2 img{
+    border-radius: 50%;
+}@media(max-width: 700px){
+    .user1 img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+@media(max-width: 700px){
+    .user2 img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+.footer ion-icon{
+    color: #f44336;
+    font-weight: 600;
+    font-size: 34px;
+    margin-left: -90;
+    cursor: pointer;
+}
+
+
+
+
+.Enroll{
+    text-align: center;
+    margin-top: 250px;
+   margin-left :130px ;
+    
+    height: 70vh;
+    width: 80%;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.Enroll h1{
+    color: white;
+     padding: 190px 20px;
+}
+.contact{
+    text-align: center;
+    margin-top: -135px;
+    position: absolute;
+    margin-left: -80px;
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 150px;
+    
+}
+.contact:hover{
+    background-color: #f44336;
+    transition: 1s;
+    
+} @media(max-width : 700px){
+    .Enroll  h1{
+        font-size: 24px;
+    }
+}
+.footer{
+    
+    margin-left: 600px;
+    position: absolute;
+    margin-top: 100px;
+    
+}
+.footer p{
+    margin-left: -200px;
+    display: flex;
+}
+.user2 ion-icon{
+    color: orangered;
+    font-size: 26px;
+}
+.user1 ion-icon{
+    color: orangered;
+    font-size: 26px;
+}
